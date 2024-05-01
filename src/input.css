@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+	@apply absolute top-0 left-0 w-1/2 h-lvh text-center pt-12 bg-white font-bold;
+}
+.remove{
+	@apply absolute -left-96 top-0;
+}
