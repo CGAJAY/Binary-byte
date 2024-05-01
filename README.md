@@ -1,0 +1,1 @@
+# Binary byte is your concise guide to the latest tech trends, innovations and insights delivering the best tech blogs for the modern tech enthusiast
