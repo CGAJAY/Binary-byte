@@ -7,27 +7,28 @@
 	<script src="https://kit.fontawesome.com/6b4ba4da31.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="output.css">
 </head>
-<body class="relative">
+<body>
 	<div class="lg:container mx-auto">
-		<header class="bg-blue-500 text-white p-4">
+		<header class="bg-blue-500 text-white p-4 ">
 			<div class="flex justify-between items-center">
-			  	<div class="text-2xl font-bold">Binary Byte</div>
-			  	<div class="md:hidden" id="menu-toggle">
+				  <div class="text-2xl font-bold">Binary Byte</div>
+				  <div class="md:hidden" id="menu-toggle">
 					<i class="fa-solid fa-bars fa-2x cursor-pointer" id="burger-toggle"></i>
 					<i class="fa-solid fa-x fa-2x cursor-pointer hidden" id="close-toggle"></i>
-			  	</div>
-			  	<nav id="nav-menu" class="remove md:block absolute md:static md:remove-off text-blue-500 md:text-white">
+				  </div>
+				  <nav id="nav-menu" class="remove md:block absolute md:static md:remove-off text-blue-500 md:text-white">
 					<ul class="flex flex-col gap-4 text-2xl md:flex-row">
-				 	 	<li class="mt-8 md:mt-0"><a href="#" class="hover:text-gray-900">Home</a></li>
-				  		<li class="mt-8 md:mt-0"><a href="#" class="hover:text-gray-900">About</a></li>
-				  		<li class="mt-8 md:mt-0"><a href="#" class="hover:text-gray-900">Blog</a></li>
-				  		<li class="mt-8 md:mt-0"><a href="#" class="hover:text-gray-900">Contact</a></li>
+						  <li class="mt-8 md:mt-0"><a href="#" class="hover:text-gray-900">Home</a></li>
+						  <li class="mt-8 md:mt-0"><a href="#category" class="hover:text-gray-900">About</a></li>
+						  <li class="mt-8 md:mt-0"><a href="#recent" class="hover:text-gray-900">Blog</a></li>
+						  <li class="mt-8 md:mt-0"><a href="#contact" class="hover:text-gray-900">Contact</a></li>
 					</ul>
-			  	</nav>
+				  </nav>
 			</div>
 		</header>
+		<div id="body-cont mt-8">
 
-		<div id="body-cont">
+			<!-- Featured Posts -->
 			<section class="bg-gray-100 py-12 flex flex-col">
 				<h2 class="text-3xl font-bold text-center mb-8">Featured Posts</h2>
 				
@@ -64,9 +65,116 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- Categories -->
+			<section class="container mx-auto text-center py-24" id="category">
+				<h2 class="text-4xl font-semibold text-blue-500 mb-24">Categories</h2>
+				<ul class="flex flex-col gap-y-24 mt-8 md:grid md:grid-cols-3 font-extrabold text-2xl">
+					<li>
+						<a href="#" class="bg-pink-500 hover:bg-pink-900 text-white p-4 md:p-8 rounded-full">Artificial Inteligence</a>
+					</li>
+					<li>
+						<a href="#" class="bg-green-600 hover:bg-green-900 text-white p-4 md:p-8 rounded-full">Blockchain</a>
+					</li>
+					<li>
+						<a href="#" class="bg-red-500 hover:bg-red-900 text-white  p-4 md:p-8 rounded-full">Software Development</a>
+					</li>
+					<li>
+						<a href="#" class="bg-yellow-500 hover:bg-yellow-900 text-white  p-4 md:p-8 rounded-full">Networking</a>
+					</li>
+					<li>
+						<a href="#" class="bg-fuchsia-600 hover:bg-fuchsia-900 text-white  p-4 md:p-8 rounded-full">Cyber security</a>
+					</li>
+				</ul>
+			</section>
+		
+			<!-- Recent Posts -->
+			<section class="py-12 flex flex-col bg-gray-100" id="recent">
+				<h2 class="text-3xl font-bold text-center mb-8">Recent Posts</h2>
+				
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4">
+					<!-- Recent Post 1 -->
+					<div class="bg-white rounded-lg overflow-hidden">
+						  <img src="imgs/img5.jpg" alt="Post 1" class="w-full h-1/2 object-cover">
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">VCP-DCV: All about VMware's Data Center Virtualization 2023.</h3>
+							<p class="text-gray-700">
+								What the VCP-DCV is, what to expect, and the recent and upcoming changes to the certification requirements
+							</p>
+						</div>
+					</div>
+					<!-- Recent Post 2 -->
+					<div class="bg-white rounded-lg hover:shadow-md overflow-hidden">
+						<img src="imgs/img4.jpg" alt="Post 2" class="w-full h-64 object-cover">
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">ChatGPT's new ‘Browse with Bing’: Watching AIs stalk you is odd.</h3>
+							<p class="text-gray-700">
+								New Bing-powered ChatGPT cares about providing reliable sources, taking its time, and finding out what you had for.	
+							</p>
+						</div>
+					</div>
+					<!-- Recent Post 3 -->
+					<div class="bg-white rounded-lg hover:shadow-md overflow-hidden">
+						  <img src="imgs/img6.jpg" alt="Post 3" class="w-full h-64 object-cover">
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">What is R&D capitalization?</h3>
+							<p class="text-gray-700">
+								R&D capitalization is a process companies use to categorize research and development costs as investments rather than,
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<!-- Newsletter Subscription -->
+			<div class="shadow px-8 py-6" id="contact">
+				<h2 class="text-4xl mb-4 text-center text-blue-500 font-bold">Subscribe to Our Newsletter</h2>
+				<form action="#" method="POST">
+					<div class="mb-4">
+						<label for="name" class="block text-gray-700 text-2xl font-bold mb-2">Name</label>
+						<input id="name" type="text" placeholder="Your Name" class="text-2xl shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+					</div>
+					<div class="mb-6">
+						<label for="email" class="block text-gray-700 text-2xl font-bold mb-2">Email</label>
+						<input id="email" type="email" placeholder="Your Email" class="text-2xl shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+					</div>
+					<div class="flex items-center justify-between">
+						<button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Subscribe</button>
+					</div>
+				</form>
+			</div>
+			  
+		
+			<!-- Footer -->
+			<footer class="bg-gray-800 text-white py-6">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center">
+				  <div class="flex justify-center lg:justify-start items-center mb-4 lg:mb-0">
+						<span class="text-xl font-bold mr-4">Binary Byte</span>
+						<div class="flex space-x-4">
+						<a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+							<i class="fab fa-instagram"></i>
+						</a>
+						</div>
+				  </div>
+					<div class="text-center lg:text-left">
+						<p class="text-gray-400">&copy; 2024 Binary Byte. All rights reserved.</p>
+						<p class="text-gray-400">Designed with ❤️ by Your Name</p>
+					</div>
+					<div class="flex justify-center lg:justify-end items-center">
+						<a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Terms of Use</a>
+						<span class="text-gray-400 mx-2">|</span>
+						<a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Privacy Policy</a>
+					</div>
+				</div>
+			</footer>
+			  
 		</div>
-		  
-		  
 	</div>
 
 	<script src="script.js"></script>
